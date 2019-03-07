@@ -185,7 +185,7 @@ def fromAlgebraicToGeometricParameters(algebraicEllipseParameters):
             tau = 0.5*acot((a - c)/b)
         elif (b < 0 and a == c):
             cat=4
-            tau = pi*3/4
+            tau = pi*1/4
         elif (b < 0 and a > c):
             cat=5
             tau = 0.5*acot((a - c)/b) #+ pi/2
@@ -229,5 +229,4 @@ def fromAlgebraicToGeometricParameters(algebraicEllipseParameters):
     geometricEllipseParameters = np.array([axisA, axisB, xCenter, yCenter, tau]).reshape(5, 1)
 
     return geometricEllipseParameters  # ,cat
-
 
