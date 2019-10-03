@@ -221,7 +221,7 @@ def fromAlgebraicToGeometricParameters(algebraicEllipseParameters):
         elif (b > 0 and a == c):
             cat=16
             tau = pi*3/4
-        elif (b > 0and a > c):
+        elif (b > 0 and a > c):
             cat=17
             tau = 0.5*acot((a - c)/b);
 
